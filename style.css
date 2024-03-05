@@ -1,0 +1,642 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  background-image: url(Design.png);
+  background-size: calc(30%);
+  background-repeat: no-repeat;
+}
+nav {
+  height: 10vh;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+nav .bt {
+  border-radius: 1vw;
+  padding: 15px;
+  background-color: transparent;
+  border: 2px solid rgb(41, 162, 41);
+}
+nav ul {
+  display: flex;
+}
+nav ul li a {
+  padding: 0 2.1vh;
+  color: black;
+}
+nav ul li a:hover {
+  color: aliceblue;
+  transition: 0.7s;
+}
+#checkbtn {
+  font-size: 5vw;
+  display: none;
+  cursor: pointer;
+}
+#checkbtn:hover {
+  color: rgb(54, 145, 54);
+}
+#check {
+  display: none;
+}
+#check:checked ~ ul {
+  left: 0;
+}
+@media (max-width: 741px) {
+  #checkbtn {
+    display: block;
+  }
+  nav ul {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(65, 170, 65);
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    transition: 0.5s;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  nav ul li {
+    display: block;
+    line-height: 80px;
+    margin: 20px;
+    font-size: 3vw;
+  }
+  .wel {
+    padding-top: 20px;
+    text-align: center;
+    flex-direction: column;
+    transition: 0.5s;
+  }
+  .sat {
+    padding-left: 20px;
+  }
+  .sat h2 {
+    font-size: 20px;
+  }
+  .sat p {
+    font-size: 15px;
+  }
+  .pro {
+    padding-left: 20px;
+  }
+  .pro h4 {
+    font-size: 10px;
+    padding: 10px 10px;
+    width: 20px;
+  }
+  .pro h1 {
+    font-size: 20px;
+  }
+  .pro .bt3 {
+    padding: 5px 5px;
+    font-size: small;
+  }
+  .pro p {
+    font-size: 10px;
+  }
+  .vis p {
+    font-size: small;
+  }
+  .uv p {
+    font-size: small;
+  }
+  .bor img {
+    height: 80px;
+  }
+  .bir img {
+    height: 90px;
+  }
+  .bar img {
+    height: 100px;
+  }
+  .vie h4 {
+    font-size: 15px;
+  }
+  .vie h1 {
+    font-size: 20px;
+  }
+  .vie img {
+    height: 20px;
+  }
+  .pr {
+    font-size: 20px;
+    flex-direction: column;
+  }
+  .thing p {
+    font-size: 15px;
+  }
+  .thing img {
+    height: 30px;
+  }
+  .image img {
+    height: 70px;
+  }
+  .oul img {
+    height: 100px;
+  }
+  .sal {
+    text-align: center;
+  }
+  .sal h4 {
+    font-size: 15px;
+  }
+  .sal h1 {
+    font-size: 20px;
+  }
+  .sal p {
+    font-size: 15px;
+  }
+  .some img {
+    height: 30px;
+  }
+  .name {
+    flex-direction: column;
+  }
+  .now {
+    font-size: 14px;
+  }
+}
+@media (max-width: 1439px) {
+  .some img {
+    height: 30px;
+  }
+  .name {
+    flex-direction: column;
+  }
+}
+.wel {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.come .but {
+  border-radius: 50%;
+  padding: 5px;
+  border: 1px solid rgb(65, 170, 65);
+  color: rgb(65, 170, 65);
+  background-color: transparent;
+}
+.come h1 {
+  padding-top: 10px;
+  font-size: 40px;
+}
+.come .line {
+  color: rgb(65, 170, 65);
+}
+.come p {
+  color: grey;
+  padding-top: 20px;
+}
+.come .bt1 {
+  background-color: rgb(65, 170, 65);
+  color: aliceblue;
+  border-radius: 10px;
+  padding: 10px;
+  border: none;
+}
+.come .bt2 {
+  background-color: transparent;
+  border-radius: 10px;
+  padding: 10px;
+  border: none;
+  padding-top: 10px;
+}
+.me {
+  display: flex;
+  align-items: center;
+  color: rgb(65, 170, 65);
+}
+.icons {
+  color: rgb(65, 170, 65);
+  display: flex;
+  align-items: center;
+  transform: rotate(90deg);
+  gap: 30px;
+}
+.sat {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding-top: 10%;
+  font-size: 20px;
+}
+.sat h2 {
+  color: rgb(65, 170, 65);
+}
+.ww {
+  border-left: 1px solid green;
+  border-right: 1px solid green;
+  padding: 0 40px;
+}
+.my {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  padding-top: 10%;
+}
+.pro h4 {
+  color: green;
+  border: 2px solid green;
+  padding: 10px;
+  border-radius: 50%;
+  width: 100px;
+}
+.pro .line {
+  color: green;
+}
+.pro p {
+  font-weight: 100;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.pro h1 {
+  padding-top: 20px;
+}
+.pro .bt3 {
+  color: aliceblue;
+  background-color: green;
+  padding: 10px 10px;
+  border: none;
+  font-size: 17px;
+  border-radius: 10px;
+}
+.vis i {
+  color: #008000;
+}
+.vis h3 {
+  padding-top: 15px;
+}
+.vis p {
+  padding-top: 15px;
+  padding-bottom: 20px;
+}
+.uv i {
+  color: green;
+}
+.uv h3 {
+  padding-top: 15px;
+}
+.uv p {
+  padding-top: 15px;
+}
+.bar {
+  float: right;
+}
+.bor {
+  padding-top: 8%;
+}
+.bir {
+  float: right;
+}
+.vie {
+  padding-left: 20%;
+}
+.vie h4 {
+  border: 1px solid #008000;
+  width: 78px;
+  border-radius: 50%;
+  color: #008000;
+  padding: 10px 10px;
+}
+.vie h1 {
+  padding-top: 20px;
+}
+.vie .ab {
+  color: #008000;
+}
+.vie img {
+  padding-left: 40vw;
+}
+.wil {
+  color: rgb(247, 202, 119);
+  padding-bottom: 10px;
+}
+.pr {
+  padding-top: 6%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+p {
+  padding-bottom: 10px;
+}
+.thing {
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 20px 20px 20px rgb(246, 235, 235);
+}
+.image {
+  padding-top: 8%;
+}
+.oul {
+  float: right;
+}
+.sal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.sal h4 {
+  text-align: center;
+}
+.sal p {
+  text-align: center;
+}
+.sal .sub {
+  color: #008000;
+}
+.sal h1 {
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+.call {
+  padding-top: 40px;
+}
+.some {
+  display: flex;
+  flex-direction: column;
+}
+.form {
+  gap: 80px;
+  padding-top: 10%;
+  display: flex;
+  justify-content: center;
+}
+
+.back input {
+  padding: 5%;
+  border-radius: 10px;
+  border: 1px solid grey;
+}
+.name {
+  display: flex;
+  gap: 10%;
+  margin-top: 20px;
+}
+.mes {
+  padding-top: 20px;
+}
+.mes input {
+  padding-top: 5%;
+  padding-bottom: 40%;
+  padding-right: 78%;
+}
+.sap {
+  padding-left: 65%;
+  padding-top: 20px;
+}
+.sap button {
+  padding: 10px;
+  border: none;
+  background-color: green;
+  color: aliceblue;
+  border-radius: 10px;
+}
+.low {
+  padding-top: 10%;
+}
+.los {
+  padding-left: 30%;
+  padding-right: 30%;
+}
+.now {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+}
+.now i {
+  color: #008000;
+}
+@media (max-width: 1091px) {
+  .wel {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+@media (max-width: 320px) {
+  .image2 {
+    width: 70px;
+  }
+  .bt {
+    font-size: 10px;
+  }
+  .come .but {
+    font-size: 10px;
+  }
+  .come h1 {
+    font-size: 20px;
+  }
+  .come p {
+    font-size: 10px;
+  }
+  .come .bt1 {
+    font-size: 10px;
+  }
+  .come .bt2 {
+    font-size: 10px;
+  }
+  .come .bt2 img {
+    height: 20px;
+  }
+  .me img {
+    height: 70vw;
+  }
+  .sat h2 {
+    font-size: 15px;
+  }
+  .sat p {
+    font-size: 9px;
+  }
+  .bar img {
+    display: none;
+  }
+  .my {
+    flex-direction: column;
+    font-size: 13px;
+  }
+  .pro h1 {
+    font-size: 17px;
+  }
+  .pro .bt3 {
+    font-size: 10px;
+  }
+  .vie h4 {
+    font-size: 10px;
+  }
+  .vie h1 {
+    font-size: 15px;
+  }
+  .vie img {
+    width: 70%;
+  }
+  .thing {
+    font-size: 15px;
+  }
+  .thing p {
+    font-size: 10px;
+  }
+  .thing img {
+    height: 20px;
+  }
+  .image img {
+    height: 50px;
+  }
+  .oul img {
+    height: 70px;
+  }
+  .sal h4 {
+    font-size: 13px;
+  }
+  .sal h1 {
+    font-size: 16px;
+  }
+  .sal p {
+    font-size: 10px;
+  }
+  .form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .some img {
+    height: 30px;
+  }
+  .mes input {
+    display: none;
+  }
+  .sap button {
+    display: none;
+  }
+  .now {
+    font-size: 9px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+}
+@media (max-width: 425px) {
+  .image2 {
+    width: 70px;
+  }
+  .bt {
+    font-size: 10px;
+  }
+  .come .but {
+    font-size: 10px;
+  }
+  .come h1 {
+    font-size: 20px;
+  }
+  .come p {
+    font-size: 10px;
+  }
+  .come .bt1 {
+    font-size: 10px;
+  }
+  .come .bt2 {
+    font-size: 10px;
+  }
+  .come .bt2 img {
+    height: 20px;
+  }
+  .me img {
+    height: 70vw;
+  }
+  .sat h2 {
+    font-size: 15px;
+  }
+  .sat p {
+    font-size: 9px;
+  }
+  .bar img {
+    display: none;
+  }
+  .my {
+    flex-direction: column;
+    font-size: 13px;
+  }
+  .pro h1 {
+    font-size: 17px;
+  }
+  .pro .bt3 {
+    font-size: 10px;
+  }
+  .vie h4 {
+    font-size: 10px;
+  }
+  .vie h1 {
+    font-size: 15px;
+  }
+  .vie img {
+    width: 70%;
+  }
+  .thing {
+    font-size: 15px;
+  }
+  .thing p {
+    font-size: 10px;
+  }
+  .thing img {
+    height: 20px;
+  }
+  .image img {
+    height: 50px;
+  }
+  .oul img {
+    height: 70px;
+  }
+  .sal h4 {
+    font-size: 13px;
+  }
+  .sal h1 {
+    font-size: 16px;
+  }
+  .sal p {
+    font-size: 10px;
+  }
+  .form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .some img {
+    height: 30px;
+  }
+  .mes input {
+    display: none;
+  }
+  .sap button {
+    display: none;
+  }
+  .now {
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+}
